@@ -6,22 +6,25 @@ const GEAPI = axios.create({
   timeout: 10000
 });
 
-// {institution_id, program_classification_id, credential_level, opeid, institution_name, city, state, zip, sector, duration_of_programs}
+/* Request a specified resource from the Gainful Employment API
+ */
 const requestGE = async (resource = '', params) => {
   const id = params && params.id;
-  const query = [];
-
+  
+  // build path string
   let path = '';
   if (resource) path += resource;
   if (id) path += '/' + id;
-
+  
+  // build query strings in an array
+  const query = [];
   for (const key in params) {
     if (params[key] && key != 'id') query.push(key + '=' + params[key]);
   }
 
   const URI = `${path}.json?${query.join('&')}`;
-
-  return GEAPI.get(URI);
+  
+  return await GEAPI.get(URI);
 };
 
 export { GEAPI, requestGE };
