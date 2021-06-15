@@ -1,4 +1,3 @@
-import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ProgramTableRow from './ProgramTableRow';
 import Table from '@material-ui/core/Table';
@@ -25,9 +24,9 @@ const ProgramTable = ({ programs }) => {
       <Table className={classes.table} aria-label="program search results">
         <TableHead>
           <TableRow>
-            <TableCell align="center">Location</TableCell>
-            <TableCell align="center">Institution</TableCell>
             <TableCell align="center">Classification</TableCell>
+            <TableCell align="center">Institution</TableCell>
+            <TableCell align="center">Location</TableCell>
             <TableCell align="center">Median Annual Debt</TableCell>
             <TableCell align="center">Average Annual Earnings</TableCell>
             <TableCell align="center">Debt to Earnings Ratio</TableCell>
@@ -43,7 +42,7 @@ const ProgramTable = ({ programs }) => {
               [...Array(5)].map((_, index) => (
                 <TableRow key={index} className={classes.row}>
                   {[...Array(6)].map((_, index) =>
-                    <TableCell key={index} align="center"><Skeleton variant="block" width='auto' /></TableCell>
+                    <TableCell key={index} align="center"><Skeleton variant="rect" width='auto' /></TableCell>
                   )}
                 </TableRow>
               ))
