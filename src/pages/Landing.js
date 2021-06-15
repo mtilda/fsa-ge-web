@@ -1,7 +1,9 @@
+import PageLayout from '../components/PageLayout';
+
 const LandingPage = () => (
-  <>
-    <h1>Landing Page</h1>
-  </>
+  <PageLayout title='Program Detail'>
+
+  </PageLayout>
 );
 
 export default LandingPage;

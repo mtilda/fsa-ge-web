@@ -1,7 +1,9 @@
+import PageLayout from '../components/PageLayout';
+
 const InstitutionDetailPage = () => (
-  <>
-    <h1>Institution Detail Page</h1>
-  </>
+  <PageLayout title='Institution Detail'>
+
+  </PageLayout>
 );
 
 export default InstitutionDetailPage;

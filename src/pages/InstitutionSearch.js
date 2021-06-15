@@ -1,7 +1,9 @@
+import PageLayout from '../components/PageLayout';
+
 const InstitutionSearchPage = () => (
-  <>
-    <h1>Institution Search Page</h1>
-  </>
+  <PageLayout title='Search for Institutions'>
+
+  </PageLayout>
 );
 
 export default InstitutionSearchPage;

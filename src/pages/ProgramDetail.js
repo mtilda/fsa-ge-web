@@ -1,7 +1,9 @@
+import PageLayout from '../components/PageLayout';
+
 const ProgramDetailPage = () => (
-  <>
-    <h1>Program Detail Page</h1>
-  </>
+  <PageLayout title='Program Detail'>
+
+  </PageLayout>
 );
 
 export default ProgramDetailPage;

@@ -1,8 +1,9 @@
+import PageLayout from '../components/PageLayout';
+
 const NotFoundPage = () => (
-  <>
-    <h1>404</h1>
+  <PageLayout title='404'>
     <h2>Page Not Found</h2>
-  </>
+  </PageLayout>
 );
 
 export default NotFoundPage;
