@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { requestGE } from '../helpers/gainfulEmploymentAPI.js.js';
 import ProgramTable from '../components/ProgramTable';
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
 
 const ProgramSearch = () => {
   const [programs, setPrograms] = useState([]);
@@ -17,10 +19,12 @@ const ProgramSearch = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Search Programs</h1>
+    <Container maxWidth='lg'>
+      <Typography variant="h1">
+        Search Programs
+      </Typography>
       <ProgramTable programs={programs} />
-    </div>
+    </Container>
   );
 };
 

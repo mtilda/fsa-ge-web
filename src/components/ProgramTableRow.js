@@ -1,12 +1,15 @@
-const ProgramTableRow = ({ data }) => (
-  <tr>
-    <td>{data.institution.state}</td>
-    <td>{data.institution.name}</td>
-    <td>{data.classification.name}</td>
-    <td>{data.latest_report.annual.debt}</td>
-    <td>{data.latest_report.annual.earnings}</td>
-    <td>{data.latest_report.annual.de_ratio}</td>
-  </tr>
+import TableCell from '@material-ui/core/TableCell';
+import TableRow from '@material-ui/core/TableRow';
+
+const ProgramTableRow = ({ program }) => (
+  <TableRow key={program.id}>
+    <TableCell component="th" scope="row">{program.institution.state}</TableCell>
+    <TableCell align="right">{program.institution.name}</TableCell>
+    <TableCell align="right">{program.classification.name}</TableCell>
+    <TableCell align="right">{program.latest_report.annual.debt}</TableCell>
+    <TableCell align="right">{program.latest_report.annual.earnings}</TableCell>
+    <TableCell align="right">{program.latest_report.annual.de_ratio}</TableCell>
+  </TableRow>
 );
 
 export default ProgramTableRow;
