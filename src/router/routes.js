@@ -28,7 +28,7 @@ const routes = [
   {
     linkText: 'Search for Programs',
     key: 'program-search',
-    path: '/programs',
+    path: '/',
     exact: true,
     Component: ProgramSearchPage,
   },
