@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   }
 });
 
-const Header = ({ title, subtitle }) => {
+const Header = ({ title }) => {
   const classes = useStyles();
 
   return (
@@ -57,6 +57,6 @@ const Header = ({ title, subtitle }) => {
       </Toolbar>
     </AppBar>
   );
-}
+};
 
 export default Header;

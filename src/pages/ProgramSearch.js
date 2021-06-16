@@ -17,7 +17,7 @@ const ProgramSearch = () => {
     (async () => {
       const res = await requestGE('programs', query);
       const data = await res.data;
-      console.log(data.results)
+      console.log(data.results);
       setPrograms(data.results);
     })();
   };

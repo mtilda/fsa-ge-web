@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import { Box, Button, TextField } from '@material-ui/core';
 
 const ProgramSearchForm = ({ setQuery }) => {
