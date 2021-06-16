@@ -3,6 +3,7 @@ import { requestGE } from '../helpers/gainfulEmploymentAPI.js.js';
 import PageLayout from '../components/PageLayout';
 import ProgramTable from '../components/ProgramTable';
 import ProgramSearchForm from '../components/ProgramSearchForm.js';
+import ContactInfoModal from '../components/ContactInfoModal';
 
 const ProgramSearch = () => {
   const [programs, setPrograms] = useState([]);
@@ -30,6 +31,7 @@ const ProgramSearch = () => {
     <PageLayout title='Search Programs'>
       <ProgramSearchForm setQuery={setQuery} />
       <ProgramTable programs={programs} />
+      <ContactInfoModal />
     </PageLayout>
   );
 };
