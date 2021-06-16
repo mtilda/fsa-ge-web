@@ -34,28 +34,28 @@ const ProgramSearchForm = ({ setQuery }) => {
   return (
     <Box color='primary' padding='16px' component='form' onSubmit={handleSubmit}>
       <TextField
-        id='outlined-basic'
-        label='Classification'
+        id='program-classification'
+        label='Program Classification'
         variant='outlined'
         value={input.cip_name}
         onChange={handleChangeClassification}
       />
       <TextField
-        id='outlined-basic'
+        id='institution-name'
         label='Institution'
         variant='outlined'
         value={input.name}
         onChange={handleChangeInsititution}
       />
       <TextField
-        id='outlined-basic'
+        id='city'
         label='City'
         variant='outlined'
         value={input.city}
         onChange={handleChangeCity}
       />
       <TextField
-        id='outlined-basic'
+        id='state'
         label='State'
         variant='outlined'
         value={input.state}
