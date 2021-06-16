@@ -34,7 +34,7 @@ const ContactInfoModal = () => {
     >
       <Box component='div' className={classes.paper}>
         <Box color='primary' padding='16px' component='form' onSubmit={handleClose}>
-          <Typography variant='h5' justify='center'>
+          <Typography variant='h5'>
             Sign up for our mailing list
           </Typography>
           <TextField

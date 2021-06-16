@@ -29,8 +29,8 @@ const Header = ({ title }) => {
           justify="space-between"
           alignItems="stretch"
         >
-          <Grid item justify='left'>
-            <Typography variant='h4' justify='left'>
+          <Grid item container justify='flex-start'>
+            <Typography variant='h4'>
               Federal Student Aid Gainful Employment Information
             </Typography>
           </Grid>
