@@ -2,23 +2,33 @@ import { useEffect, useState } from 'react';
 import { requestGE } from '../helpers/gainfulEmploymentAPI.js.js';
 import PageLayout from '../components/PageLayout';
 import ProgramTable from '../components/ProgramTable';
+import ProgramSearchForm from '../components/ProgramSearchForm.js';
 
 const ProgramSearch = () => {
   const [programs, setPrograms] = useState([]);
+  const [query, setQuery] = useState({
+    cip_name: '',
+    name: '',
+    city: '',
+    state: '',
+  });
   
   const fetchPrograms = async () => {
-    const res = await requestGE('programs');
-    const data = await res.data;
-    console.log(data);
-    setPrograms(data.results);
+    (async () => {
+      const res = await requestGE('programs', query);
+      const data = await res.data;
+      console.log(data.results)
+      setPrograms(data.results);
+    })();
   };
 
   useEffect(() => {
     fetchPrograms();
-  }, []);
+  }, [query]);
 
   return (
     <PageLayout title='Search Programs'>
+      <ProgramSearchForm setQuery={setQuery} />
       <ProgramTable programs={programs} />
     </PageLayout>
   );

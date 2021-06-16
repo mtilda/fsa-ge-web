@@ -30,6 +30,7 @@ const ProgramTable = ({ programs }) => {
             <TableCell align="center">Median Annual Debt</TableCell>
             <TableCell align="center">Average Annual Earnings</TableCell>
             <TableCell align="center">Debt to Earnings Ratio</TableCell>
+            <TableCell align="right">Pass/Fail/Zone</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
