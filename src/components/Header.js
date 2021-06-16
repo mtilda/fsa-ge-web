@@ -39,7 +39,7 @@ const Header = ({ title, subtitle }) => {
               {title}
             </Typography>
           </Grid>
-          <Grid
+          {/* <Grid
             item
             container
             direction="row"
@@ -52,7 +52,7 @@ const Header = ({ title, subtitle }) => {
                 <Link key={key} className={classes.link} component={RouterLink} to={path}>{linkText}</Link>
               ))
             }
-          </Grid>
+          </Grid> */}
         </Grid >
       </Toolbar>
     </AppBar>

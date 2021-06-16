@@ -4,27 +4,28 @@ import InstitutionDetailPage from '../pages/InstitutionDetail.js';
 import InstitutionSearchPage from '../pages/InstitutionSearch.js';
 import ProgramDetailPage from '../pages/ProgramDetail.js';
 import ProgramSearchPage from '../pages/ProgramSearch.js';
+import { Redirect } from 'react-router-dom';
 
 const routes = [
-  {
-    linkText: 'Home',
-    key: 'landing',
-    path: '/',
-    exact: true,
-    Component: LandingPage,
-  },
-  {
-    linkText: 'Search for Institutions',
-    key: 'institution-search',
-    path: '/institutions',
-    exact: true,
-    Component: InstitutionSearchPage,
-  },
-  {
-    key: 'institution-detail',
-    path: '/institutions',
-    Component: InstitutionDetailPage,
-  },
+  // {
+  //   linkText: 'Home',
+  //   key: 'landing',
+  //   path: '/',
+  //   exact: true,
+  //   Component: LandingPage,
+  // },
+  // {
+  //   linkText: 'Search for Institutions',
+  //   key: 'institution-search',
+  //   path: '/institutions',
+  //   exact: true,
+  //   Component: InstitutionSearchPage,
+  // },
+  // {
+  //   key: 'institution-detail',
+  //   path: '/institutions',
+  //   Component: InstitutionDetailPage,
+  // },
   {
     linkText: 'Search for Programs',
     key: 'program-search',
@@ -32,17 +33,17 @@ const routes = [
     exact: true,
     Component: ProgramSearchPage,
   },
-  {
-    key: 'program-detail',
-    path: '/programs',
-    Component: ProgramDetailPage,
-  },
-  {
-    key: 'notfound',
-    path: '*',
-    exact: false,
-    Component: NotFoundPage,
-  }
+  // {
+  //   key: 'program-detail',
+  //   path: '/programs',
+  //   Component: ProgramDetailPage,
+  // },
+  // {
+  //   key: 'notfound',
+  //   path: '*',
+  //   exact: false,
+  //   Component: NotFoundPage,
+  // }
 ];
 
 export default routes;

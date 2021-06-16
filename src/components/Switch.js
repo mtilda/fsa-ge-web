@@ -1,4 +1,4 @@
-import { Switch as RouterSwitch, Route } from 'react-router-dom';
+import { Switch as RouterSwitch, Route, Redirect } from 'react-router-dom';
 
 const Switch = ({ routes }) => (
   <RouterSwitch>
@@ -11,6 +11,9 @@ const Switch = ({ routes }) => (
         <Component />
       </Route>
     ))}
+    <Route path='*'>
+      <Redirect to='programs' />
+    </Route>
   </RouterSwitch>
 );
 
