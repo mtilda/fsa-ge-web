@@ -7,6 +7,7 @@ const ProgramSearchForm = ({ setQuery }) => {
     name: '',
     city: '',
     state: '',
+    zip: '',
   });
 
   const handleChangeClassification = (e) => {
@@ -23,6 +24,10 @@ const ProgramSearchForm = ({ setQuery }) => {
 
   const handleChangeState = (e) => {
     setInput({ ...input, state: e.target.value });
+  };
+
+  const handleChangeZip = (e) => {
+    setInput({ ...input, zip: e.target.value });
   };
 
   const handleSubmit = (e) => {
@@ -59,6 +64,13 @@ const ProgramSearchForm = ({ setQuery }) => {
         variant='outlined'
         value={input.state}
         onChange={handleChangeState}
+      />
+      <TextField
+        id='zip'
+        label='Zip'
+        variant='outlined'
+        value={input.zip}
+        onChange={handleChangeZip}
       />
       <Button
         type='submit'
