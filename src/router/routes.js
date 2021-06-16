@@ -1,10 +1,9 @@
-import NotFoundPage from '../pages/404.js';
-import LandingPage from '../pages/Landing';
-import InstitutionDetailPage from '../pages/InstitutionDetail.js';
-import InstitutionSearchPage from '../pages/InstitutionSearch.js';
-import ProgramDetailPage from '../pages/ProgramDetail.js';
+// import NotFoundPage from '../pages/404.js';
+// import LandingPage from '../pages/Landing';
+// import InstitutionDetailPage from '../pages/InstitutionDetail.js';
+// import InstitutionSearchPage from '../pages/InstitutionSearch.js';
+// import ProgramDetailPage from '../pages/ProgramDetail.js';
 import ProgramSearchPage from '../pages/ProgramSearch.js';
-import { Redirect } from 'react-router-dom';
 
 const routes = [
   // {
