@@ -1,9 +1,9 @@
-import Nav from './Nav';
+import Header from './Header';
 import Container from '@material-ui/core/Container';
 
-const PageLayout = ({ title, children }) => (
+const PageLayout = ({ title = 'Gainful Employment Information', subtitle, children }) => (
   <Container>
-    <Nav title={title} />
+    <Header title={title} subtitle={subtitle} />
     {children}
   </Container>
 );

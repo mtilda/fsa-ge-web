@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   }
 });
 
-const Nav = ({ title }) => {
+const Header = ({ title, subtitle }) => {
   const classes = useStyles();
 
   return (
@@ -25,14 +25,22 @@ const Nav = ({ title }) => {
       <Toolbar>
         <Grid
           container
-          direction="row"
+          direction="column"
           justify="space-between"
-          alignItems="center"
+          alignItems="stretch"
         >
-          <Typography variant='h3' component='div'>
-            {title}
-          </Typography>
+          <Grid item justify='left'>
+            <Typography variant='h4' justify='left'>
+              Federal Student Aid Gainful Employment Information
+            </Typography>
+          </Grid>
+          <Grid item container justify='center'>
+            <Typography variant='h1'>
+              {title}
+            </Typography>
+          </Grid>
           <Grid
+            item
             container
             direction="row"
             justify="space-between"
@@ -51,4 +59,4 @@ const Nav = ({ title }) => {
   );
 }
 
-export default Nav;
+export default Header;
